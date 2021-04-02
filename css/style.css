@@ -1,55 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Hammersmith+One&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Gothic+A1&family=Hammersmith+One&family=Josefin+Sans:wght@300&display=swap');
 
 :root {
     --blue:#423EED;
     --grey: #404040;
     --orange: #FFD873;
     --black: #000000;
+    --lightgrey: #F6F4EA;
     --bold: 'Hammersmith One', sans-serif;
-    --nav: 'Josefin Sans', sans-serif;
-    --copy: 'GFS Neohellenic', sans-serif;
+    --copy:'Gothic A1', sans-serif;
+}
+
+html, body { /* prevent horizontal scroll */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    background-color: var(--lightgrey);
 }
 
 .left-nav {
 position: absolute;
 list-style: none; /* gets rid of the bullet points */
-display: inline;
+display: inline-block;
 
-font-family: var(--nav-font);
+font-family: var(--copy);
 font-size: 1.2em;
 
 top: 5%;
 writing-mode: sideways-lr; /*for sideways nav*/
 }
 
-.left-nav > a {
+.left-nav > a { /* making links within nav grey */
     color: var(--grey);
 }
 
 
-.star {
-position: absolute;
-width: 60.76px;
-height: 146.28px;
-left: 6px;
-top: 40px;
-
-font-style: normal;
-
-/* identical to box height, or 221% */
-display: flex;
-align-items: center;
-
-color: var(--blue);
-
-}
-
 .middle {
+    /* centering text */
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    top: 50%;
+    width: 100%;
 
     font-family: var(--bold);
     color: var(--blue);
     font-size: 2.5em;
 }
+
+.mid-sub { /* subtitle for the middle text */
+    font-family: var(--copy);
+    color: var(--grey);
+    font-size: 1.2em;
+
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    width: 100%;
+    
+}
+
+.rectangle {
+    width: 100px;
+    height: 5px;
+    background: var(--orange);
+
+    left: 41%;
+    top: 84%;
+  }
