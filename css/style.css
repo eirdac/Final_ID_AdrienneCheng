@@ -23,6 +23,7 @@ html {
 position: absolute;
 list-style: none; /* gets rid of the bullet points */
 display: inline-block;
+padding-top: 15px;
 
 font-family: var(--copy);
 font-size: 1.2em;
@@ -56,7 +57,6 @@ writing-mode: sideways-lr; /*for sideways nav*/
     color: var(--grey);
     font-size: 1.2em;
 
-    left: 0;
     line-height: 200px;
     margin-top: -100px;
     position: absolute;
@@ -68,9 +68,42 @@ writing-mode: sideways-lr; /*for sideways nav*/
 
 .rectangle {
     width: 100px;
-    height: 5px;
-    background: var(--orange);
-
-    left: 41%;
-    top: 84%;
+    height: 3px;
+    background-color: var(--orange);
+    margin-top: 31%;
+    margin-left: 40%;
   }
+
+.socials {
+    text-align: right; /*getting links to the right of the page*/
+    position: relative;
+    float: right;
+    padding-right: 15px;
+    top: 90%;
+
+    font-family: var(--copy);
+    font-weight: 700;
+
+}
+
+.socials > ul,li,a { /* making socials within nav grey */
+    color: var(--grey);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* about section */
+
+.heading {
+    color: var(--blue);
+    font-family: var(--bold);
+
+    left: 80px;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: left;
+    top: 10%;
+ 
+}
