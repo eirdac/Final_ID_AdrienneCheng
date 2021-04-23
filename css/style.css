@@ -21,7 +21,7 @@ html {
 
 .logo {
     width: 10%;
-    height: 10%;
+    height: auto;
 }
 
 .left-nav {
@@ -128,16 +128,39 @@ writing-mode: sideways-lr; /*for sideways nav*/
 }
 
 
+.bolder {
+    color: var(--blue);
+    font-family: var(--bold);
+}
+
 /*grid*/
 
-.grid-container {
+.self-img > img {
+
+    width: 60%;
+    height: auto;
+
+    justify-content: center;
+    padding-left: 150px;
+}
+
+.abtme {
+    align-content: center;
+    padding-right: 40px;
+}
+
+.about-grid {
+
+    padding-top: 200px;
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 0.25fr;
     gap: 0px 0px;
     grid-template-areas:
-      ". . . ."
-      ". . . ."
-      ". . . .";
+        "self-img abtme"
+        "    .     .   "
+
   }
-  
+  .self-img { grid-area: self-img; }
+  .abtme { grid-area: abtme; }
