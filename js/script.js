@@ -1,5 +1,3 @@
-$("body").css("background-color", "white");
-
 //kinetic type section
 $(document).on("click", "#nav_ktype", function() {
 
@@ -8,7 +6,7 @@ $(document).on("click", "#nav_ktype", function() {
 
 });
 
-//anajo pillow section
+//anajo section
 $(document).on("click", "#nav_anajo", function() {
 
   $("#content_anajo").slideDown("fast");
@@ -17,7 +15,7 @@ $(document).on("click", "#nav_anajo", function() {
 });
 
 
-//3d environment section
+//3d section
 $(document).on("click", "#nav_3d", function() {
 
   $("#content_3d").slideDown("fast");
@@ -25,7 +23,7 @@ $(document).on("click", "#nav_3d", function() {
 
 });
 
-//split ring section
+//split section
 $(document).on("click", "#nav_split", function() {
 
     $("#content_split").slideDown("fast");
@@ -41,4 +39,4 @@ $(document).on("click", "#nav_blobbo", function() {
   
   });
 
-$("#nav_ktype").click(); // loads when the user clicks the first tab?
+  $("#nav_ktype").click();
