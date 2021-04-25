@@ -10,6 +10,14 @@
     --copy:'Gothic A1', sans-serif;
 }
 
+#iframe { 
+    position: absolute; 
+    width: 100%;
+    height: 83%;
+    top: 10%; 
+
+}
+
 html, body { /* prevent horizontal scroll */
     max-width: 100%;
     overflow-x: hidden;
@@ -48,6 +56,7 @@ writing-mode: sideways-lr; /*for sideways nav*/
 
 .left-nav > a:hover {
     color: var(--blue);
+    text-decoration: underline;
 }
 
 
@@ -64,6 +73,7 @@ writing-mode: sideways-lr; /*for sideways nav*/
     font-family: var(--bold);
     color: var(--blue);
     font-size: 2.5em;
+    text-shadow: #cfcfcf 3px 5px 3px;
 }
 
 .mid-sub { /* subtitle for the middle text */
@@ -86,6 +96,7 @@ writing-mode: sideways-lr; /*for sideways nav*/
     background-color: var(--orange);
     margin-top: 31%;
     margin-left: 40%;
+    position: sticky;
   }
 
 .socials {
@@ -266,4 +277,17 @@ writing-mode: sideways-lr; /*for sideways nav*/
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* back to top button */
+.back_to_top > a {
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    color: var(--blue);
+}
+
+.back_to_top > a:hover {
+    color: var(--grey);
 }
