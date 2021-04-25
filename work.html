@@ -10,6 +10,7 @@
 
    
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
@@ -37,8 +38,8 @@
         </div>
 
         <!--
-            * TO DO: figure out how to connect jquery to vs code
-            * add spline animation to home page
+            * TO DO: figure out how to connect jquery to vs code - partially done... all tabs won't work
+            * add spline animation to home page - done
             * get the contact page to submit and show a "submitted!" screen
             * add nav bar slide out if i have time 
         -->
@@ -48,13 +49,13 @@
 
             <!--using the base from coding exercise #1-->
             <div id="nav">
-    
-                <a href="#" id="nav_ktype">Kinetic type</a>
-                <a href="#" id="nav_anajo">Anajo pillow</a>
-                <a href="#" id="nav_3d">3D environment</a>
-                <a href="#" id="nav_split">Split ring</a>
-                <a href="#" id="nav_blobbo">Blobbo toy</a>
-
+                <ul id="navigation">
+                    <a href="#" id="nav_ktype">Kinetic type</a>
+                    <a href="#" id="nav_anajo">Anajo</a>
+                    <a href="#" id="nav_3d">3D environment</a>
+                    <a href="#" id="nav_split">Split</a>
+                    <a href="#" id="nav_blobbo">Blobbo</a>
+                </ul>
                 <br><br>
 
               </div>
@@ -95,6 +96,9 @@
                         35 second kinetic type video of HONNE's <i>Just Dance</i>
                     </p>
 
+                    <br><br>
+                    <br><br>
+
                     <!-- end of ktype section-->
                 
                 
@@ -133,11 +137,14 @@
                 
                 </div>
 
+                <br><br>
+                <br><br>
+
                 <!-- anajo end -->
                 
 
                 <!-- 3d start -->
-                <div class="text" id="3d">
+                <div class="text" id="content_3d">
                     
                     <img class="hero-adjust" src="img/3d-hero.png" alt="3d rendered room">
 
@@ -165,12 +172,15 @@
 
                 
                 </div>
+
+                <br><br>
+                <br><br>
                 <!-- 3d end -->
 
 
                 <!-- split start -->
 
-                <div class="text" id="split">
+                <div class="text" id="content_split">
                     
                     <img class="hero-adjust" src="img/split-hero.png" alt="split ring on a hand">
 
@@ -191,10 +201,13 @@
 
                     <img style="width:60%; height: auto; display: block; margin: auto" src="img/split_ring.png" alt ="split ring diagram">
                 </div>
+
+                <br><br>
+                <br><br>
                 <!-- split end -->
 
                 <!-- blobbo start -->
-                <div class="text" id="blobbo">
+                <div class="text" id="content_blobbo">
                     
                     <img class="hero-adjust" src="img/blobbo-hero.png" alt="blobbo toy">
 
@@ -226,16 +239,24 @@
                     <img style="width:60%; height: auto; display: block; margin: auto" src="img/blobbo-money.png" alt="product shot">
                 
                 </div>
+                
+                <br><br>
+                <br><br>
 
                 <!-- blobbo end -->
               
 
+                <div class="back_to_top">
+                    <a href="#nav" ><ion-icon name="arrow-up-outline"></ion-icon></a>
+                </div>    
+                
 
 
 
               </div> <!--work container end-->
             
-            
+              
+
             
             
             </div>
