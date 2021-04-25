@@ -19,13 +19,18 @@ html {
     background-color: var(--lightgrey);
 }
 
-.logo {
-    width: 10%;
+.logo > a > img {
+    width: 6%;
     height: auto;
+    position: fixed;
+
+    /* getting the icon stuck to the bottom so user can use it to go back to the front */
+    bottom: 0;
+    left:0;
 }
 
 .left-nav {
-position: absolute;
+position: fixed;
 list-style: none; /* gets rid of the bullet points */
 display: inline-block;
 padding-top: 15px;
@@ -85,10 +90,10 @@ writing-mode: sideways-lr; /*for sideways nav*/
 
 .socials {
     text-align: right; /*getting links to the right of the page*/
-    position: relative;
+    position: fixed;
     float: right;
-    padding-right: 15px;
-    top: 90%;
+    bottom: 30%;
+    right: 1%;
 
     font-family: var(--copy);
     font-weight: 700;
@@ -127,13 +132,12 @@ writing-mode: sideways-lr; /*for sideways nav*/
 
 }
 
-
 .bolder {
     color: var(--blue);
     font-family: var(--bold);
 }
 
-/*grid*/
+/*grid elements formatting*/
 
 .self-img > img {
 
@@ -149,6 +153,8 @@ writing-mode: sideways-lr; /*for sideways nav*/
     padding-right: 40px;
 }
 
+
+/* grid formatting for about page */
 .about-grid {
 
     padding-top: 200px;
@@ -164,3 +170,100 @@ writing-mode: sideways-lr; /*for sideways nav*/
   }
   .self-img { grid-area: self-img; }
   .abtme { grid-area: abtme; }
+
+  /* end of about grid section */
+
+.projects > ul > li > a { /* making links within nav grey */
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.projects > ul > li > a:hover {
+    color: var(--grey);
+    font-weight: 700;
+    
+}
+
+.work-img > img {
+    width: 40%;
+    height: auto;
+}
+
+
+
+/* coding exercise 1 base */
+  
+.work-container {
+    width: 60%;
+    margin: 4% auto 0 auto;
+    font-family: var(--copy);
+
+    padding: 10px;
+}
+
+#nav {
+    padding: 10px;
+    justify-items: center;
+    border-bottom: var(--grey);
+}
+  
+#nav a {
+    color: var(--blue);
+    font-family: var(--copy);
+
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 900;
+    justify-content: space-evenly;
+}
+  
+#nav a:hover {
+    color: var(--orange);
+    font-weight: 700;
+ }
+  
+#text {
+    background-color: #000000;
+    font-size: 12px;
+    padding: 5px;
+    display: none; 
+
+}
+
+#highlight {
+    background-color: var(--orange);
+    border-radius: 6px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+
+    justify-content: space-evenly;
+  }
+  
+/*end of base */
+
+.video-adjust {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.form-container {
+    width: 40%;
+    height: auto;
+    margin: 4% auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-adjust {
+    width:70%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
